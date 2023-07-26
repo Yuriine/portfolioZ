@@ -7,7 +7,7 @@ import uno from '../images/1.png';
 import dos from '../images/2.png';
 import tres from '../images/3.png';
 import cuatro from '../images/4.png';
-import prueba from '../images/prueba.jpg';
+
 import once from '../images/11.jpg';
 import doce from '../images/12.jpg';
 import trece from '../images/13.png';
@@ -15,11 +15,18 @@ import catorce from '../images/14.jpg';
 import quince from '../images/15.png';
 import dieciseis from '../images/16.png';
 import diecisiete from '../images/17.jpg';
-
+import dieciocho from '../images/r9.png';
+import diecinueve from '../images/r10.png';
+import veinte from '../images/r11.png';
+import veintiuno from '../images/r12.png';
+import veintidos from '../images/r13.png';
+import veintitres from '../images/r14.png';
+import veinticuatro from '../images/r15.jpg';
 
 import Contacts from '../components/contacts';
 import Cards from '../components/cards';
 import Footer from '../components/footer';
+import Cards1 from '../components/cards1';
 
 const Clases = () => {
 
@@ -149,12 +156,21 @@ Emmet es una abreviatura de "Emmett", y se refiere a un conjunto de atajos y abr
         <h3>Clases</h3>
         <div className='clases-cards'>
             <Cards boton={'https://www.figma.com/file/GI6G7xxflEYTcJSDw4rCFB/PortfolioDesign?type=design&t=WgY9THzTW4zT9giB-0'} imagen={once} semana={'SEMANA 01'} titulo={'Tecnologías de desarrollo de Software'} descripcion={'Herramientas que te ayudan a desarrollar paginas web y todo lo ncesario que debes saber para empezar a hacerlo'} />
-            <Cards boton={'src/pages/Semanas/semana2/index.html'} imagen={doce} semana={'SEMANA 02'} titulo={'HTML (HyperText Markup Language)'} descripcion={'Es el lenguaje estándar utilizado para crear y estructurar el contenido de páginas web. Se utiliza para definir la estructura y el significado de los elementos en un documento web.'} />
-            <Cards boton={'src/pages/Semanas/semana3/index.html'} imagen={trece} semana={'SEMANA 03'} titulo={'Bootstrap'} descripcion={'Es un framework de diseño web front-end que proporciona un conjunto de estilos, componentes y scripts predefinidos.'} />
-            <Cards boton={'src/pages/Semanas/semana4/index.html'} imagen={catorce} semana={'SEMANA 04'} titulo={'JavaScript'} descripcion={'Es un lenguaje de programación de alto nivel que se utiliza principalmente para agregar interactividad y comportamiento dinámico a las páginas web.'} />
-            <Cards boton={''} imagen={quince} semana={'SEMANA 05'} titulo={'API'} descripcion={'Conjuntos de reglas y protocolos que permiten la comunicación y la interacción entre diferentes componentes de software.'} />
+            <Cards boton={'/portfolioZ/src/pages/Semanas/semana2/index.html'} imagen={doce} semana={'SEMANA 02'} titulo={'HTML (HyperText Markup Language)'} descripcion={'Es el lenguaje estándar utilizado para crear y estructurar el contenido de páginas web. Se utiliza para definir la estructura y el significado de los elementos en un documento web.'} />
+            <Cards boton={'/portfolioZ/src/pages/Semanas/semana3/index.html'} imagen={trece} semana={'SEMANA 03'} titulo={'Bootstrap'} descripcion={'Es un framework de diseño web front-end que proporciona un conjunto de estilos, componentes y scripts predefinidos.'} />
+            <Cards boton={'/portfolioZ/src/pages/Semanas/semana4/index.html'} imagen={catorce} semana={'SEMANA 04'} titulo={'JavaScript'} descripcion={'Es un lenguaje de programación de alto nivel que se utiliza principalmente para agregar interactividad y comportamiento dinámico a las páginas web.'} />
+            <Cards boton={'/portfolioZ/'} imagen={quince} semana={'SEMANA 05'} titulo={'API'} descripcion={'Conjuntos de reglas y protocolos que permiten la comunicación y la interacción entre diferentes componentes de software.'} />
             <Cards boton={''} imagen={dieciseis} semana={'SEMANA 06'} titulo={'React'} descripcion={'Es una biblioteca de JavaScript para construir interfaces de usuario interactivas y reutilizables. '} />
             <Cards boton={''} imagen={diecisiete} semana={'SEMANA 07'} titulo={'Vite, Remix y NextJs'} descripcion={'Estas son herramientas y frameworks populares utilizados para el desarrollo de aplicaciones web.'} /> 
+            <Cards1 boton={'/portfolioZ/semana9'} imagen={dieciocho} semana={'SEMANA 09'} titulo={'Enrutamiento'} descripcion={'El enrutamiento es el proceso de determinar qué componente o página se debe mostrar en función de la URL actual del navegador.'} /> 
+            <Cards1 boton={''} imagen={diecinueve} semana={'SEMANA 10'} titulo={'React Hooks CRUD'} descripcion={' CRUD se refiere a las operaciones básicas de creación (Create), lectura (Read), actualización (Update) y eliminación (Delete) de datos.'} /> 
+            <Cards1 boton={''} imagen={veinte} semana={'SEMANA 11'} titulo={'Apche TomCat'} descripcion={'Apache Tomcat es un servidor web y contenedor de servlets y tecnologías JavaServer Pages (JSP)..'} /> 
+            <Cards1 boton={''} imagen={veintiuno} semana={'SEMANA 12'} titulo={'IntellJ - Servlets'} descripcion={' IntelliJ es un entorno de desarrollo integrado (IDE) para Java y otras tecnologías.'} /> 
+            <Cards1 boton={''} imagen={veintidos} semana={'SEMANA 13'} titulo={'Spring boot'} descripcion={' Spring Boot es un framework de Java que simplifica el desarrollo de aplicaciones basadas en Spring.'} /> 
+            <Cards1 boton={''} imagen={veintitres} semana={'SEMANA 14'} titulo={'Spring Initializr'} descripcion={'Estas son herramientas y frameworks populares utilizados para el desarrollo de aplicaciones web.'} /> 
+            <Cards1 boton={''} imagen={veinticuatro} semana={'SEMANA 15'} titulo={'Postman y Crud'} descripcion={'Spring Initializr es una herramienta en línea que permite generar rápidamente proyectos de Spring Boot personalizados.'} /> 
+            <Cards1 boton={''} imagen={diecisiete} semana={'SEMANA 16'} titulo={'Vite, Remix y NextJs'} descripcion={'Estas son herramientas y frameworks populares utilizados para el desarrollo de aplicaciones web.'} /> 
+
         </div>
         <Footer />
     </div>

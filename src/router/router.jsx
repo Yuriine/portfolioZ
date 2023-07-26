@@ -2,6 +2,7 @@
 import Content from "../pages/content";
 import App from "../App";
 import Clases from "../pages/clases";
+import Semana9 from "../pages/semana9";
 /*asd ad a da das*/ 
 import React from "react";
 ;
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/portfolioZ/clases",
     element: <Clases />,
+  },
+  {
+    path: "/portfolioZ/semana9",
+    element: <Semana9 />,
   },
 ]);
 
