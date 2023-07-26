@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div class="bola" id="bola"></div>
+    <button  id="detener">Detener bola</button>
+    <button  id="mover">Mover bola</button>
+    <button  id="reversa">Reversa</button>
+    <button  id="reset" >Reset </button>
+    <button id="bounce">Rebotar</button>
+  
+
+    <script>
+      console.log('hola');
+      const bola = document.getElementById('bola');
+      const detener = document.getElementById('detener');
+      const mover = document.getElementById('mover');
+      const reversa = document.getElementById('reversa');
+      const reset = document.getElementById('reset');
+      const bounce = document.getElementById('bounce');
+
+      let direction = false;
+      mover.addEventListener('click', () => {
+        bola.style.animationPlayState = 'running'
+      });
+      
+
+      reversa.addEventListener('click', () => {
+        direction = !direction;
+
+        if (direction) {
+          bola.style.animationDirection = 'reverse'
+
+        } else {
+          bola.style.animationDirection = 'normal'
+        }
+        bola.style.animationPlayState = 'running'
+      });
+      
+      detener.addEventListener('click', () => {
+        bola.style.animationPlayState = 'paused'
+      });
+
+      bounce.addEventListener('click', () => {
+        bola.style.animationIterationCount = 'infinite'
+        bola.style.animationTimingFunction = 'ease-in-out'
+        bola.style.animationDirection = 'alternate'
+      });
+      
+      
+  reset.addEventListener('click', () => {
+        // move to original position in y axis
+        bola.style.animation = 'none';
+        bola.offsetHeight; /* trigger reflow */
+        bola.style.animation = null;
+        bola.style.animationPlayState = 'paused'
+
+      });
+
+    </script>
+    
+
+</body>
+</html>

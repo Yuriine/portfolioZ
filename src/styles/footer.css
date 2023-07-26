@@ -1,0 +1,78 @@
+.footer{
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-linea{
+    position: relative;
+    top: 0;
+    left: 0;
+    
+
+    border: 1px dashed #C9BBB0
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-content__titulo{
+    
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center ;
+}
+.footer-content__titulo .b{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0;
+    /* identical to box height */
+    
+    letter-spacing: 0.17em;
+    
+}
+.footer-content__titulo .a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0;
+
+    /* identical to box height */
+    letter-spacing: 0.17em;
+    color: transparent;
+    -webkit-text-stroke: 1px #FFFFFF;
+    
+}
+.footer-content__cuadros{
+    display: flex;
+    gap: 7px;
+}
+.footer-content__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 29px;
+    width: 500px;
+    
+}
+
+.cuadro_uno{
+    width: 290px;
+    height: 65px;
+    background: #C9BBB0 ;
+    border-radius: 15px;
+}
+.cuadro_dos, .cuadro_tres, .cuadro_cuatro, .cuadro_cinco, .cuadro_seis{
+    width: 5px;
+    height: 65px;
+    background: #C9BBB0 ;
+    border-radius: 15px;
+}

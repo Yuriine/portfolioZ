@@ -1,0 +1,137 @@
+.banner-titulo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    
+    line-height: 44px;
+    position: relative;
+    z-index: 1000;
+    background-blend-mode: difference;
+    letter-spacing: 0.12em;
+
+    height: 40px;       
+    width: 550px;
+    color: white;
+    line-height: 40px;
+    font-size: 30px;
+    
+    /*-------------CENTRAR------------*/
+    
+    overflow: hidden;
+    
+ }
+.banner-contenido__contact{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    background-color: #C9BBB0;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 20px;
+    color: #070E18;
+
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 0.12em;
+} 
+.banner-contenido__contact:hover{
+    background-color: #B85044;
+    color: #fff;
+    transition: 0.5s;
+}
+.banner-contenido__content{
+    margin-top: 15px;
+    font-family: 'Montserrat';
+    width: 500px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+}
+.banner-contenido > div{
+
+    margin-top: 40px;
+
+}
+.banner{
+    
+    margin-top: 80px;
+    max-width: 100%;
+    padding-left: 80px;
+    display: flex;
+   
+    
+    
+}
+.banner-gato{
+    position: relative;
+    right: -170px;
+    /* top:-100px;
+    border: 2px solid white; */
+    max-width: 600px;
+    
+    
+
+}
+.banner-gato__gato{
+    position: relative;
+    z-index: 100;
+    width: fit-content;
+}
+
+.banner-gato__bola{
+    width: 375px;
+    height: 374px;
+    left: 1033px;
+    top: 248px;
+    background: #B85044;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    left: 200px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+/* .banner-gato__bola:hover{
+    background-color: #C9BBB0;
+    transform: scale(3);
+} */
+
+
+.banner-gato__gato:hover + .banner-gato__bola{
+    background-color: #C9BBB0;
+    transform: scale(3);
+}   
+.gatito:hover path{
+    fill: #B85044;
+    transition: all 0.5s ease-in-out;
+}
+.banner-titulo ul{
+    list-style: none;
+    padding-left: 100px;
+    animation: cambiar 8s infinite;
+
+}
+.banner-titulo p, .banner-titulo ul{
+    margin: 0;
+}
+@keyframes cambiar {
+    0%,20%{
+        margin-top: -40px;
+    }
+    
+    25%,50%{
+        margin-top: -80px;
+    }
+   
+    55%,75%{
+        margin-top: -120px;
+    }
+    85%,95%{
+        margin-top: -80px;
+    }
+    100%{
+        margin-top: -40px;
+    }
+}

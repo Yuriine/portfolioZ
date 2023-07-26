@@ -1,0 +1,50 @@
+#bola{
+    background-color: aqua;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: 50vh;
+    animation: animate 1s linear infinite;
+    position: absolute;
+}
+/* .normal{
+    animation: animate 1s linear infinite;
+    
+} */
+@keyframes animate{
+    0%{
+        
+        left: 0px;
+    }
+    100%{
+        left: 500px;
+    }
+    
+}
+.reverse{
+    animation: reverse 1s linear infinite;
+    
+}
+
+@keyframes reverse{
+    0%{
+        
+        left: 0;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+
+.buttons{
+    margin-top: 10px;   
+
+}
+/* .boton{
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+} */

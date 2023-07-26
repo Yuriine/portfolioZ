@@ -1,0 +1,57 @@
+
+.imagen{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0;
+}
+.titulo{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 0;
+    letter-spacing: 0.055em;
+    }
+.semana{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.055em;
+    margin: 0 auto;
+    padding: 0;
+}
+.descripcion{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    height: 60px;
+    overflow: auto;
+
+}
+.descripcion::-webkit-scrollbar {
+    display: none; /* Oculta la barra de scroll en navegadores webkit */
+  }
+.botonn{
+    background-color: #C9BBB0;
+    display: inline-block;
+    color: #070E18;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+}

@@ -1,0 +1,173 @@
+.contenido-cursos{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 628px;
+    height: 350px;
+    margin-left: 30px;
+    position: relative;
+    background: #C9BBB0;
+    border-radius: 0px 30px 30px 30px;
+    color: #070E18;
+    
+}
+  
+.lista-clases{
+    display: flex;
+    margin-top: -30px;
+}
+.lista-clases-titulos{
+    font-family: 'Montserrat';
+
+    font-weight: 500;
+
+}
+.lista-clases ul li{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #070E18;
+    list-style: none;
+}
+.lista-clases__li{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 17px;
+    margin-bottom: 5px;
+    color: #070E18;
+    list-style: none;
+}
+.pata{
+    position: absolute;
+    right: 50px;
+}
+.bola{
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: #B85044;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    visibility: hidden;
+    position: absolute;
+    right: 50px;
+    transition: all 0.8s ease-in-out;
+}
+.bolas-bolas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 374px;
+    height: 371px;
+    overflow: hidden;
+    
+}
+.todo-clases{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.lista-clases::before{
+    content: '';
+    width: 25px;
+    height: 50px;
+    background: #C9BBB0;
+    position: absolute;
+    left: 10%;
+    bottom: -50px;
+}
+.lista-clases::after{
+    content: '';
+    width: 25px;
+    height: 50px;
+    background: #C9BBB0;
+    position: absolute;
+    right: 10%;
+    bottom: -50px;
+}
+.clases-contenido_cl{
+    
+    margin: 50px auto 0 auto;
+    background-color: #C9BBB0;
+    width: 100vw;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+.clases-ul{
+    display: flex;
+    flex-direction: column;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caja img{
+    width: 500px;
+    object-fit: cover;
+}
+.clases-banner__text{
+    width: 180px;
+}
+.clases-banner{
+    position: relative;
+    bottom: -130px;
+}
+.clases-contenido{
+    margin: 80px auto 0 auto;
+    background-color: #C9BBB0;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+
+}
+.lana{
+    position: relative;
+}
+.lana p{
+     font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    
+}
+.lana_lana{
+    animation: lana 5s ease-in-out infinite;
+}
+@keyframes lana {
+    0%{ 
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+    
+}
+.contacts-clases{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -80px;
+}
+.clases-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
