@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+
 import Content from "../pages/content";
 import App from "../App";
 import Clases from "../pages/clases";
@@ -13,16 +13,24 @@ const router = createBrowserRouter([
   {
     path: "/portfolioZ/",
     element: <App />,
-    children: [
-      {
-        path: "/portfolioZ/clases",
-        element: <Clases />,
-      },
-      {
-        path: "/portfolioZ/content",
-        element: <Content />,
-      },
-    ],
+    // children: [
+    //   {
+    //     path: "/portfolioZ/clases",
+    //     element: <Clases />,
+    //   },
+    //   {
+    //     path: "/portfolioZ/content",
+    //     element: <Content />,
+    //   },
+    // ],
+  },
+  {
+    path: "/portfolioZ/content",
+    element: <Content />,
+  },
+  {
+    path: "/portfolioZ/clases",
+    element: <Clases />,
   },
 ]);
 

@@ -8,16 +8,19 @@ import Content from './pages/content'
 import ContentA from './components/contentA'
 import Footer from './components/footer'
 import Contacts from './components/contacts'
+import { Outlet } from 'react-router-dom'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      
       <Menu />
       <Banner />
       <Contacts direction='column' position='absolute' />
       <ContentA />
       <Footer />
+      
     </>
   )
 }

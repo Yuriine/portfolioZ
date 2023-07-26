@@ -11,13 +11,13 @@ const Menu = () => {
     return(
   
             <div className="menu">
-                <Link to="/" className="logo">
+                <Link to="/portfolioZ/" className="logo">
                 <img className='logoGato' src={logo} alt="" />
                 </Link>
                 <div className="menu-items">
-                    <Link to="/" className="menu-items__item">Home</Link>
-                    <Link to="content" className="menu-items__item">Contenido</Link>
-                    <Link to="clases" className="menu-items__item">Clases</Link>
+                    <Link to="/portfolioZ/" className="menu-items__item">Home</Link>
+                    <Link to="/portfolioZ/content" className="menu-items__item">Contenido</Link>
+                    <Link to="/portfolioZ/clases" className="menu-items__item">Clases</Link>
                     <a className="menu-items__item">Sobre mi</a> 
                 </div>
             </div>
