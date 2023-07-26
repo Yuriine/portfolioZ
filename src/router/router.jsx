@@ -3,10 +3,28 @@ import Content from "../pages/content";
 import App from "../App";
 import Clases from "../pages/clases";
 /*asd ad a da das*/ 
-export const router = (
-  <Routes>
-    <Route path="content" element={<Content />} />
-    <Route path="/" element={<App />} />
-    <Route path="clases" element={<Clases />} />
-  </Routes>
-);
+import React from "react";
+;
+
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/portfolioZ/",
+    element: <App />,
+    children: [
+      {
+        path: "/portfolioZ/clases",
+        element: <Clases />,
+      },
+      {
+        path: "/portfolioZ/content",
+        element: <Content />,
+      },
+    ],
+  },
+]);
+
+export { router };
+
